@@ -6,16 +6,32 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="dist/style.css" />
     <title>Vitfess</title>
+    <style>
+        .active {
+            background-color: white;
+            color: #1B1B1B;
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-10px);
+        }
+        .inactive {
+            background-color: #131313;
+            color: white;
+            transition: all 0.3s ease-in-out;
+            transform: translateY(0);
+        }
+    </style>
+
+  </style>
   </head>
   <body>
     <header>
       <section class="bg-primary text-white w-screen h-screen grid grid-cols-7 grid-rows-8 gap-8">
-        <div class="col-span-3 col-start-3 row-start-2">
-          <ul class="flex justify-around items-center border border-solid border-white p-6 rounded-full text-[24px] bg-[#131313]">
-            <li>Vitfess</li>
-            <li>Fonctionnalités</li>
-            <li>Blog</li>
-            <li>Newsletter</li>
+        <div class="col-span-5 col-start-2 row-start-2">
+          <ul id="navList" class="flex justify-around items-center border border-solid border-white  rounded-full text-[24px] bg-[#131313] w-full">
+            <li class="p-4 w-full text-center bg-white text-primary cursor-pointer rounded-full translate-y-[-10px] inactive">Vitfess</li>
+            <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Fonctionnalités</li>
+            <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Blog</li>
+            <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Newsletter</li>
           </ul>
         </div>
         <div class="col-span-5 col-start-2 row-start-4 text-center">
@@ -23,13 +39,14 @@
           <p class="text-[45px] opacity-70 font-light">(Promis, on ne dira rien aux enfants!)</p>
         </div>
         <div class="col-span-3 col-start-3 row-start-5 flex items-center justify-center">
-          <button class="bg-secondary-100 py-1  px-12 font-normal rounded-xl text-[32px] ">Reserver en vitfess</button>
+          <button class="bg-secondary-100 py-2  px-12 font-normal rounded-xl text-[32px] ">Reserver en vitfess</button>
         </div>
         <div class="col-span-2 row-span-2 col-start-6 row-start-7">
           <img src="images/big_logo.png" alt="logo-vitfess">
         </div>
       </section>
     </header>
+
     <main>
       <section class="w-screen h-screen bg-white grid grid-cols-9 grid-rows-8 gap-4">
         <div class="col-span-5 col-start-3 row-start-2 text-[48px] text-center">
@@ -73,7 +90,7 @@
       </section>
       
       <section class="w-screen h-screen grid grid-cols-10 grid-rows-9 gap-4 bg-primary">
-        <div class="col-span-6 col-start-3 row-start-2 text-[48px] font-semibold text-center text-white">
+        <div class="col-span-6 col-start-3 row-start-2 text-[44px] font-semibold text-center text-white">
           <p>
             Des conseils amoureux plus savoureux qu'une nuit <br>
             complète de sommeil
@@ -99,15 +116,15 @@
       <section class="w-screen h-screen grid grid-cols-10 grid-rows-10 gap-4">
         <div class="col-span-8 row-span-8 col-start-2 row-start-2 bg-primary">
           <div class=" w-full h-full grid grid-cols-8 grid-rows-8 text-white">
-            <div class="flex items-end col-span-4 col-start-3 row-start-3 text-[48px]">
+            <div class="flex items-end col-span-4 col-start-3 row-start-3 text-[40px]">
               <p>Inscrivez-vous à notre newsletter!
               </p>
             </div>
-            <div class="col-span-6 col-start-2 row-start-4 text-[46px]">
+            <div class="col-span-6 col-start-2 row-start-4 text-[40px] ">
               Promis, c'est plus excitant qu'un épisode de Peppa Pig.
             </div>
             <div class="flex col-span-4 col-start-3 row-start-5 bg-[#FCFCFC] rounded-full text-[20px]">
-              <input type="mail" placeholder="Inscris ton mail ici...." class="w-full h-full px-24 rounded-full text-black">
+              <input type="mail" placeholder="Inscris ton mail ici...." class="w-full h-full px-20 rounded-full text-black">
               <button type="submit" class="bg-secondary-100 px-24 rounded-full m-4">Envoyer</button>
             </div>
           </div>
@@ -115,27 +132,63 @@
       </section>
 
       <section class="w-screen h-screen grid grid-cols-10 grid-rows-10 gap-4">
-        <div class="grid grid-cols-8 grid-rows-8 gap-4">
-          <div class="col-span-5 row-span-4">6</div>
-          <div class="col-span-3 row-span-4 col-start-6">7</div>
-          <div class="col-span-5 row-span-4 col-start-4 row-start-5">8</div>
-          <div class="col-span-3 row-span-4 col-start-1 row-start-5">9</div>
+        <div class="col-span-8 row-span-8 col-start-2 row-start-2">
+          <div class=" w-full h-full grid grid-cols-8 grid-rows-8 gap-4">
+            <div class="col-span-5 row-span-4 bg-secondary-200 rounded-lg"></div>
+            <div class="col-span-3 row-span-4 col-start-6 bg-primary rounded-lg"></div>
+            <div class="col-span-5 row-span-4 col-start-4 row-start-5 bg-secondary-200 rounded-lg"></div>
+            <div class="col-span-3 row-span-4 col-start-1 row-start-5 bg-primary rounded-lg"></div>
+          </div>
         </div>
       </section>
+      
     </main>
     <footer>
-      <section class="w-screen flex flex-col justify-center items-center text-center gap-4 p-4">
-        <p>Studio Miam est une agence de création de contenu digitale.</p>
-        <p>© 2024 Studio Miam</p>
+      <section class="w-screen h-[50vh] grid grid-cols-8 grid-rows-6 gap-4 bg-primary text-white text-[24px]">
+        <div class="flex items-center col-span-3 col-start-2 row-start-2">
+          <p>Pour en savoir plus sur nos offres restons en contact !</p>
+        </div>
+        <div class="flex col-span-4 col-start-2 row-start-3 bg-[#FCFCFC] rounded-xl text-[28px]">
+          <input type="mail" placeholder="Votre adresse mail...." class="w-full h-full px-24 rounded-lg text-black">
+          <button type="submit" class="bg-secondary-100 px-12 rounded-2xl m-2">Envoyer</button>
+        </div>
+        <div class="flex items-center col-span-2 col-start-2 row-start-4">
+          <p>Produits. Service. Le groupe. Contact.</p>
+        </div>
+        <div class="col-span-3 col-start-2 row-start-6">
+          <p>Ce site a un faible impact environnemental.</p>
+        </div>
+        <div class="flex justify-end col-start-7 row-start-4 cursor-pointer">
+          <a href="https://www.linkedin.com/" target="_blank">
+            <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+          </a>
+        </div>
+        <div class="flex justify-end col-span-2 col-start-6 row-start-6 cursor-pointer">
+          <p>Mentions légales - Presse</p>
+        </div>
+        <div class="w-full col-span-6 col-start-2 row-start-5 h-1 bg-white opacity-35"></div>
       </section>
     </footer>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM3XTH3LS5"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const navItems = document.querySelectorAll('#navList li');
 
-        gtag('config', 'G-DM3XTH3LS5');
-      </script>
+          // Activer le premier élément par défaut
+          navItems[0].classList.remove('inactive');
+          navItems[0].classList.add('active');
+
+          navItems.forEach(item => {
+              item.addEventListener('click', function() {
+                  navItems.forEach(nav => {
+                      nav.classList.remove('active');
+                      nav.classList.add('inactive');
+                  });
+                  item.classList.remove('inactive');
+                  item.classList.add('active');
+              });
+          });
+      });
+  </script>
     </body>
 </html>
