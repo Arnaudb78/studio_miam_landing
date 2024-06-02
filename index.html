@@ -21,11 +21,11 @@
             transform: translateY(0);
         }
     </style>
-
-  </style>
   </head>
   <body>
+
     <header>
+
       <section class="bg-primary text-white w-screen h-screen grid grid-cols-7 grid-rows-8 gap-8">
         <div class="col-span-5 col-start-2 row-start-2">
           <ul id="navList" class="flex justify-around items-center border border-solid border-white  rounded-full text-[24px] bg-[#131313] w-full">
@@ -46,9 +46,11 @@
           <img src="images/big_logo.png" alt="logo-vitfess">
         </div>
       </section>
+
     </header>
 
     <main>
+
       <section class="w-screen h-screen bg-white grid grid-cols-9 grid-rows-8 gap-4">
         <div class="col-span-5 col-start-3 row-start-2 text-[48px] text-center">
           <h2>Un espace privé et romantique <br> où les couples peuvent se reconnecter</h2>
@@ -144,7 +146,9 @@
       </section>
       
     </main>
+
     <footer>
+
       <section class="w-screen h-[50vh] grid grid-cols-8 grid-rows-6 gap-4 bg-primary text-white text-[24px]">
         <div class="flex items-center col-span-3 col-start-2 row-start-2">
           <p>Pour en savoir plus sur nos offres restons en contact !</p>
@@ -169,13 +173,13 @@
         </div>
         <div class="w-full col-span-6 col-start-2 row-start-5 h-1 bg-white opacity-35"></div>
       </section>
+
     </footer>
     
     <script>
       document.addEventListener('DOMContentLoaded', function() {
           const navItems = document.querySelectorAll('#navList li');
 
-          // Activer le premier élément par défaut
           navItems[0].classList.remove('inactive');
           navItems[0].classList.add('active');
 
