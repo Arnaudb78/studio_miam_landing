@@ -22,27 +22,23 @@
         }
     </style>
   </head>
-  <body>
-
-    <header class="bg-primary text-white w-screen h-screen grid grid-cols-7 grid-rows-8 gap-8">
-        <div class="col-span-5 col-start-2 row-start-2">
-          <ul id="navList" class="flex justify-around items-center border border-solid border-white  rounded-full text-[24px] bg-[#131313] w-full">
+  <body class="h-full w-full">
+    <header class="w-full h-screen bg-primary text-white flex flex-col justify-around items-center gap-10 p-28">
+          <ul id="navList" class="flex justify-around items-center border border-solid border-white  rounded-full text-[24px] bg-[#131313] w-2/3">
             <li class="p-4 w-full text-center bg-white text-primary cursor-pointer rounded-full translate-y-[-10px] inactive">Vitfesse</li>
             <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Fonctionnalités</li>
             <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Blog</li>
             <li class="p-4 w-full text-center bg-[#131313] text-white cursor-pointer rounded-full inactive">Newsletter</li>
           </ul>
-        </div>
-        <div class="col-span-5 col-start-2 row-start-4 text-center">
+      <div class="flex flex-col justify-center items-center">
           <h2 class="text-[60px]">Des moments coquins à portée de clic!</h2>
           <p class="text-[45px] opacity-70 font-light">(Promis, on ne dira rien aux enfants!)</p>
-        </div>
-        <div class="col-span-3 col-start-3 row-start-5 flex items-center justify-center">
-          <button class="bg-secondary-100  px-12 font-normal rounded-xl text-[32px] mt-32 p-4">Reserver en vitfesse</button>
-        </div>
-        <div class="absolute right-0 bottom-[-40px] mt-4">
-          <img class="" src="images/big_logo.png" alt="logo-vitfess">
-        </div>
+            <button class="bg-secondary-100  px-12 font-normal rounded-xl text-[32px] mt-10 p-4">Reserver en vitfesse</button>
+      </div>
+      
+      <div class="absolute right-0 bottom-[-40px] mt-4">
+        <img class="h-72 w-auto" src="images/big_logo.png" alt="logo-vitfess">
+      </div>
     </header>
 
     <main>
@@ -198,6 +194,7 @@
           <a class="bg-white text-[24px] text-primary w-fit px-8 py-4 mt-20 rounded-full" href="">Je craque vitfesse</a>
         </div>
       </section>
+
       <section class="h-fit w-screen flex justify-center gap-8 mb-40">
         <div class="w-[43.75%] h-fit bg-[#f1f1f0] p-8 text-[36px] rounded-lg">
           <div class="flex flex-col">
