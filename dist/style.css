@@ -501,15 +501,18 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.m-1 {
-  margin: 0.25rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -535,18 +538,6 @@ video {
 .mt-\[147px\] {
   margin-top: 147px;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
-}
 .flex {
   display: flex;
 }
@@ -559,20 +550,14 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-8 {
+  height: 2rem;
+}
 .h-\[0\.5px\] {
   height: 0.5px;
 }
 .h-full {
   height: 100%;
-}
-.h-screen {
-  height: 100vh;
-}
-.h-7 {
-  height: 1.75rem;
-}
-.h-8 {
-  height: 2rem;
 }
 .w-20 {
   width: 5rem;
@@ -583,6 +568,9 @@ video {
 .w-6 {
   width: 1.5rem;
 }
+.w-8 {
+  width: 2rem;
+}
 .w-\[90\%\] {
   width: 90%;
 }
@@ -592,21 +580,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-2\/3 {
-  width: 66.666667%;
-}
-.w-\[80\%\] {
-  width: 80%;
-}
-.w-\[0\%\] {
-  width: 0%;
-}
-.w-7 {
-  width: 1.75rem;
-}
-.w-8 {
-  width: 2rem;
 }
 .flex-col {
   flex-direction: column;
@@ -645,10 +618,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(238 237 237 / var(--tw-bg-opacity));
 }
-.bg-\[\#FF6419\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 100 25 / var(--tw-bg-opacity));
-}
 .bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
@@ -682,6 +651,10 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -694,40 +667,13 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-\[12px\] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
+.py-\[12px\] {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
