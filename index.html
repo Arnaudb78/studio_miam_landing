@@ -10,17 +10,19 @@
   </head>
   <body>
     <header class="w-full bg-primary p-12">
-      <nav class="w-full flex justify-center">
-        <img src="images/logo_name.png" alt="logo" />
+      <nav class="w-full flex justify-center lg:flex lg:justify-between items-center">
+        <img class="lg:w-48 h-auto" src="images/l_n.svg" alt="logo" />
+        <a class="hidden bg-secondary-100 text-[13px] px-6 py-2 rounded-full mt-16 lg:block lg:mt-0 lg:text-secondary-200 lg:cursor-pointer lg:text-[20px]" href="">Réserver en vitfesse</a>
       </nav>
       <div class="w-full h-full text-secondary-200 text-[20px] flex flex-col items-center mt-36 text-center gap-4">
-        <h2 class="font-extrabold">DES MOMENTS COQUINS<br> À PORTÉE DE CLIC !</h2>
-        <p class="text-[16px]">(Promis, on ne dira rien aux enfants!)</p>
-        <a class="bg-secondary-100 text-[13px] px-6 py-2 rounded-full mt-16" href="">Réserver en vitfesse</a>
+        <h2 class="font-extrabold lg:hidden">DES MOMENTS COQUINS<br> À PORTÉE DE CLIC !</h2>
+        <h2 class="hidden font-extrabold text-[50px] lg:block">DES MOMENTS COQUINS À PORTÉE DE CLIC !</h2>
+        <p class="text-[16px] lg:text-[36px]">(Promis, on ne dira rien aux enfants!)</p>
+        <a class="bg-secondary-100 text-[13px] px-6 py-2 rounded-full mt-16 lg:text-[20px]" href="">Réserver en vitfesse</a>
       </div>
-      <img class="x-10" src="images/pink_arrow.png" alt="arrow" />
-      <div class="w-full h-full flex justify-end items-end mt-[147px]">
-        <img class="w-36 h-28" src="images/big_logo.png" alt="arrow" />
+      <img class="w-28 h-auto lg:w-40 lg:h-auto lg:absolute lg:left-80 lg:top-[430px]" src="images/arr.png" alt="arrow" />
+      <div class="w-full h-full flex justify-end items-end mt-[147px] lg:mt-0">
+        <img class="w-36 h-28 lg:w-[400px] lg:h-auto" src="images/big_logo.png" alt="arrow" />
       </div>
     </header>
 
