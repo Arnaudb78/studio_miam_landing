@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{js,js,ts,ts,html}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "couple": "url('/images/bg.png')",
+      },
       colors: {
         primary: "#232D32",
         secondary: {
@@ -10,6 +13,9 @@ module.exports = {
           200: "#FEFDF4",
           300: "#FF6419",
         },
+      },
+      fontFamily: {
+        satoshi:["Satoshi", "sans-serif"]
       },
     },
   },
