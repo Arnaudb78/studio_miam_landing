@@ -1096,20 +1096,12 @@ video {
     width: 50%;
   }
 
-  .lg\:w-1\/4 {
-    width: 25%;
-  }
-
   .lg\:w-10 {
     width: 2.5rem;
   }
 
   .lg\:w-12 {
     width: 3rem;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .lg\:w-2\/4 {
