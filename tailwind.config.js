@@ -14,6 +14,7 @@ module.exports = {
             },
             fontFamily: {
                 satoshi: ["Satoshi", "sans-serif"],
+                shadow: ["Shadows-Into-Light", "cursive"],
             },
         },
     },

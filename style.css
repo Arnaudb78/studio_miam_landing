@@ -133,4 +133,15 @@
          font-style: italic;
   }
   
+  @font-face {
+     font-family: "Shadows-Into-Light", cursive;
+     src: url("/assets/font/shadow-into-light/ShadowsIntoLight-Regular.svg#ShadowsIntoLight") format("svg");
+     src: url("/assets/font/shadow-into-light/ShadowsIntoLight-Regular.otf") format("otf");
+     src: url("\font\shadow-into-light\ShadowsIntoLight-Regular.ttf") format("truetype");
+     src: url("/assets/font/shadow-into-light/shadowsintolight-regular-webfont.woff") format("woff");
+     src: url("/assets/font/shadow-into-light/shadowsintolight-regular-webfont.woff2") format("woff2");
+     font-weight: 400;
+     font-style: normal;
+   }
+   
   

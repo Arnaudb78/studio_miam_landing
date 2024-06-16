@@ -775,6 +775,9 @@ video {
 .font-satoshi {
   font-family: Satoshi, sans-serif;
 }
+.font-shadow {
+  font-family: Shadows-Into-Light, cursive;
+}
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -833,6 +836,11 @@ video {
 }
 .opacity-50 {
   opacity: 0.5;
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .transition-all {
   transition-property: all;
@@ -977,6 +985,45 @@ video {
          font-style: italic;
   }
   
+  @font-face {
+     font-family: "Shadows-Into-Light", cursive;
+     src: url("/assets/font/shadow-into-light/ShadowsIntoLight-Regular.svg#ShadowsIntoLight") format("svg");
+     src: url("/assets/font/shadow-into-light/ShadowsIntoLight-Regular.otf") format("otf");
+     src: url("\font\shadow-into-light\ShadowsIntoLight-Regular.ttf") format("truetype");
+     src: url("/assets/font/shadow-into-light/shadowsintolight-regular-webfont.woff") format("woff");
+     src: url("/assets/font/shadow-into-light/shadowsintolight-regular-webfont.woff2") format("woff2");
+     font-weight: 400;
+     font-style: normal;
+   }
+  
+  .hover\:bg-secondary-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 145 255 / var(--tw-bg-opacity));
+}
+  
+  .hover\:bg-secondary-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 100 25 / var(--tw-bg-opacity));
+}
+  
+  .hover\:text-secondary-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 253 244 / var(--tw-text-opacity));
+}
+  
+  .hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+  
+  .hover\:duration-300:hover {
+  transition-duration: 300ms;
+}
+  
+  .hover\:ease-in-out:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
   
   @media (min-width: 1024px) {
 
@@ -994,6 +1041,10 @@ video {
 
   .lg\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:mt-10 {
@@ -1277,6 +1328,10 @@ video {
     padding-top: 6rem;
   }
 
+  .lg\:pt-28 {
+    padding-top: 7rem;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -1351,5 +1406,5 @@ video {
     color: rgb(254 253 244 / var(--tw-text-opacity));
   }
 }
-  
+   
   
