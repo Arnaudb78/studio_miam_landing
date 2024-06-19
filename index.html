@@ -18,7 +18,13 @@
                         <li class="cursor-pointer hover:bg-secondary-300 px-4 py-2 rounded-full">Blog</li>
                         <li class="cursor-pointer hover:bg-secondary-300 px-4 py-2 rounded-full">Newsletter</li>
                         <li class="cursor-pointer hover:bg-secondary-300 px-4 py-2 rounded-full">Abonnement</li>
-                        <li><a class="bg-secondary-100 py-2 px-6 rounded-full cursor-pointer lg:py-3 lg:px-10 hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300" href="">Réserver en vitfesse</a></li>
+                        <li>
+                            <a
+                                class="bg-secondary-100 py-2 px-6 rounded-full cursor-pointer lg:py-3 lg:px-10 hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                                href=""
+                                >Réserver en vitfesse</a
+                            >
+                        </li>
                     </ul>
                     <svg id="menu-toggle" class="w-8 lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
@@ -54,15 +60,19 @@
                         évadant de leurs problèmes quotidiens.
                     </p>
                     <div
-                        class="bg-secondary-200 flex justify-between w-[90%] p-2 rounded-full my-4 text-[11px] lg:text-[14px] lg:w-2/5 lg:flex lg:justify-between lg:px-4">
-                        <input class="text-primary w-full p-1 lg:w-full" type="text" placeholder="Inscris ton mail ici...."/>
-                        <a class="bg-secondary-100 px-6 py-3 rounded-full cursor-pointer hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300">Envoyer</a>
+                        class="bg-secondary-200 flex justify-between w-[90%] p-2 rounded-full my-4 text-[11px] lg:text-[14px] lg:w-2/5 lg:flex lg:justify-between lg:px-4 email-container">
+                        <input class="email-input text-primary w-full p-1 lg:w-full" type="text" placeholder="Inscris ton mail ici...." />
+                        <a
+                            class="send-button bg-secondary-100 px-6 py-3 rounded-full cursor-pointer hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                            >Envoyer</a
+                        >
                     </div>
+                    <div class="message text-primary-100"></div>
                 </div>
             </section>
 
             <section class="w-full h-full p-8 text-center font-bold text-[16px] lg:px-28 lg:pt-24 lg:flex lg:flex-col lg:items-center">
-                <div class="w-full flex justify-between items-center lg:w-3/5 lg:flex lg:justify-between lg:items-center ">
+                <div class="w-full flex justify-between items-center lg:w-3/5 lg:flex lg:justify-between lg:items-center">
                     <img class="w-8 h-auto lg:w-10 lg:h-auto" src="assets/images/splash_l.png" alt="eclat rose" />
                     <img class="w-8 h-auto lg:w-10 lg:h-auto" src="assets/images/splash_r.png" alt="eclat rose" />
                 </div>
@@ -86,7 +96,8 @@
                     </div>
                     <div class="w-full flex flex-col justify-center lg:flex lg:flex-col lg:text-[20px]">
                         <div class="flex justify-center gap-2 mt-2 lg:gap-4 lg:mb-2 lg:mt-0">
-                            <div class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
+                            <div
+                                class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
                                 <h3>Flexibilité :</h3>
                                 <p class="font-normal text-[14px] lg:text-[15px]">
                                     Des réservations à l'heure, offrant une grande flexibilité pour s'adapter à tous les emplois du temps.
@@ -98,7 +109,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-6 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
+                            <div
+                                class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-6 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
                                 <h3>Ambiance romantique :</h3>
                                 <p class="font-normal text-[14px] lg:text-[15px]">
                                     Des chambres décorées de manière romantique et sensuelle sur différent thème.
@@ -112,7 +124,8 @@
                             </div>
                         </div>
                         <div class="w-full flex justify-center gap-2 mt-2 lg:gap-4">
-                            <div class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
+                            <div
+                                class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
                                 <h3>Discrétion :</h3>
                                 <p class="font-normal text-[14px] lg:text-[15px]">
                                     Un service discret et sécurisé pour que les utilisateurs puissent profiter de leur moment en toute tranquillité.
@@ -124,7 +137,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
+                            <div
+                                class="w-[50%] bg-[#EEEDED] p-4 text-start rounded-lg lg:h-full lg:p-8 lg:flex lg:flex-col lg:gap-2 lg:mb-10 hover:text-secondary-200 hover:bg-secondary-100">
                                 <h3>Évasion :</h3>
                                 <p class="font-normal text-[14px] lg:text-[15px]">
                                     Offrir une expérience unique qui permet aux couples de se sentir comme en vacances, même s'ils ne quittent pas
@@ -141,11 +155,15 @@
                     </div>
                 </div>
                 <div class="hidden lg:w-full lg:flex lg:justify-center lg:text-[18px] lg:font-light lg:text-secondary-200 mb-20">
-                    <a class="bg-secondary-100 px-8 py-4 rounded-full hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300" href="/">Réserver en vitfesse</a>
+                    <a
+                        class="bg-secondary-100 px-8 py-4 rounded-full hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                        href="/"
+                        >Réserver en vitfesse</a
+                    >
                 </div>
             </section>
 
-            <section class="w-full h-full text-secondary-200 ">
+            <section class="w-full h-full text-secondary-200">
                 <div class="bg-primary w-full p-8 text-[18px] flex flex-col gap-6 lg:py -20 lg:px-28">
                     <h3 class="text-center font-bold lg:hidden lg:mt-20">
                         Des conseils amoureux plus<br />
@@ -184,8 +202,7 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
+                            <div class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
                                 <div
                                     class="w-full h-11 flex justify-center items-center bg-secondary-100 rounded-t-lg border-b-[0.5px] border-primary lg:h-fit">
                                     <p class="text-secondary-200 font-semibold lg:font-normal lg:text-[18px] lg:p-4">Titre de l'article</p>
@@ -208,8 +225,7 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
+                            <div class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
                                 <div
                                     class="w-full h-11 flex justify-center items-center bg-secondary-100 rounded-t-lg border-b-[0.5px] border-primary lg:h-fit">
                                     <p class="text-secondary-200 font-semibold lg:font-normal lg:text-[18px] lg:p-4">Titre de l'article</p>
@@ -232,8 +248,7 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
+                            <div class="hidden lg:bg-secondary-200 lg:text-primary lg:flex lg:flex-col lg:rounded-lg text-[16px] lg:w-full lg:h-fit">
                                 <div
                                     class="w-full h-11 flex justify-center items-center bg-secondary-100 rounded-t-lg border-b-[0.5px] border-primary lg:h-fit">
                                     <p class="text-secondary-200 font-semibold lg:font-normal lg:text-[18px] lg:p-4">Titre de l'article</p>
@@ -255,8 +270,6 @@
                                     </svg>
                                 </div>
                             </div>
-
-                           
                         </div>
                     </div>
                 </div>
@@ -274,8 +287,11 @@
                         </p>
                         <div
                             class="bg-secondary-200 flex justify-between w-[90%] p-2 rounded-full my-4 text-[11px] lg:w-2/4 lg:flex lg:justify-between lg:px-4 lg:text-[15px]">
-                            <input class="text-primary w-full p-1 lg:w-full" type="text" placeholder="Inscris ton mail ici...."/>
-                            <a class="bg-secondary-300 px-6 py-2 rounded-full cursor-pointer hover:bg-secondary-100 hover:transition-all hover:ease-in-out hover:duration-300">Envoyer</a>
+                            <input class="text-primary w-full p-1 lg:w-full" type="text" placeholder="Inscris ton mail ici...." />
+                            <a
+                                class="bg-secondary-300 px-6 py-2 rounded-full cursor-pointer hover:bg-secondary-100 hover:transition-all hover:ease-in-out hover:duration-300"
+                                >Envoyer</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -321,7 +337,9 @@
                         </ul>
                         <div class="lg:w-full lg:flex lg:justify-between lg:items-center lg:text-[18px]">
                             <p>100€/mois</p>
-                            <a href="/" class="lg:bg-secondary-200 lg:px-4 lg:py-2 lg:rounded-full lg:cursor-pointer lg:text-primary lg:text-center hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300"
+                            <a
+                                href="/"
+                                class="lg:bg-secondary-200 lg:px-4 lg:py-2 lg:rounded-full lg:cursor-pointer lg:text-primary lg:text-center hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300"
                                 >Je craque vitfesse</a
                             >
                         </div>
@@ -329,7 +347,8 @@
                 </div>
 
                 <div class="flex flex-col justify-center items-center gap-4 mt-4 mb-10 lg:flex lg:flex-row lg:w-full">
-                    <div class="w-full h-[300px] flex flex-col rounded-lg bg-[url('/assets/images/massage_desktop.png')] bg-no-repeat bg-cover lg:w-full lg:h-[500px]">
+                    <div
+                        class="w-full h-[300px] flex flex-col rounded-lg bg-[url('/assets/images/massage_desktop.png')] bg-no-repeat bg-cover lg:w-full lg:h-[500px]">
                         <div class="w-full flex justify-end p-10">
                             <p class="bg-white opacity-25 px-3 rounded-full">Top 1</p>
                         </div>
@@ -337,12 +356,18 @@
                             <p class="font-bold text-[18px] lg:text-[32px]">Pour reposer<br />vos corps !</p>
                             <p class="lg:text-[32px] text-secondary-300 font-shadow">( Je ne crois pas )</p>
                         </div>
-                        <div class="w-full flex justify-center items-center text-primary text-center text-[12px] font-bold lg:w-full lg:h-full lg:p-10 lg:flex lg:justify-start lg:items-end">
-                            <a href="/" class="w-[90%] bg-secondary-200 p-2 rounded-full cursor-pointer lg:w-2/4 lg:text-[18px] hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300">Je craque vitfesse</a>
+                        <div
+                            class="w-full flex justify-center items-center text-primary text-center text-[12px] font-bold lg:w-full lg:h-full lg:p-10 lg:flex lg:justify-start lg:items-end">
+                            <a
+                                href="/"
+                                class="w-[90%] bg-secondary-200 p-2 rounded-full cursor-pointer lg:w-2/4 lg:text-[18px] hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300"
+                                >Je craque vitfesse</a
+                            >
                         </div>
                     </div>
 
-                    <div class="w-full h-[300px] flex flex-col rounded-lg bg-[url('/assets/images/sauna_desktop.png')] bg-no-repeat bg-cover lg:w-full lg:h-[500px] ">
+                    <div
+                        class="w-full h-[300px] flex flex-col rounded-lg bg-[url('/assets/images/sauna_desktop.png')] bg-no-repeat bg-cover lg:w-full lg:h-[500px]">
                         <div class="w-full flex justify-end p-10">
                             <p class="bg-white opacity-25 px-3 rounded-full">Top 1</p>
                         </div>
@@ -350,8 +375,13 @@
                             <p class="font-bold text-[18px] lg:text-[32px]">Pour être dans<br />votre bulle !</p>
                             <p class="lg:text-[32px] text-secondary-100 font-shadow">( Mais à deux )</p>
                         </div>
-                        <div class="w-full flex justify-center items-center text-primary text-center text-[12px] font-bold lg:w-full lg:h-full lg:p-10 lg:flex lg:justify-start lg:items-end">
-                            <a href="/" class="w-[90%] bg-secondary-200 p-2 rounded-full cursor-pointer lg:w-2/4 lg:text-[18px] hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300">Je craque vitfesse</a>
+                        <div
+                            class="w-full flex justify-center items-center text-primary text-center text-[12px] font-bold lg:w-full lg:h-full lg:p-10 lg:flex lg:justify-start lg:items-end">
+                            <a
+                                href="/"
+                                class="w-[90%] bg-secondary-200 p-2 rounded-full cursor-pointer lg:w-2/4 lg:text-[18px] hover:bg-secondary-300 hover:text-secondary-200 hover:transition-all hover:ease-in-out hover:duration-300"
+                                >Je craque vitfesse</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -363,14 +393,19 @@
                     Pour en savoir plus sur nos produit<br />
                     restons en contact !
                 </p>
-                <p class="hidden lg:block ">Pour en savoir plus sur nos produit restons en contact !</p>
+                <p class="hidden lg:block">Pour en savoir plus sur nos produit restons en contact !</p>
+                <div class="message text-secondary-200"></div>
                 <div
-                    class="bg-secondary-200 w-fit mt-6 py-3 px-2 rounded-full text-[10px] lg:w-1/2 lg:rounded-full lg:flex lg:justify-between lg:text-[14px]">
-                    <input class="text-primary lg:w-full lg:rounded-full lg:px-4" type="text" placeholder="Inscris ton mail ici...."/>
-                    <a class="bg-secondary-300 px-4 py-2 rounded-full cursor-pointer lg:rounded-full lg:bg-secondary-100 lg:py-4 lg:px-10 hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300">Envoyer</a>
+                    class="bg-secondary-200 w-fit mt-6 py-3 px-2 rounded-full text-[10px] lg:w-1/2 lg:rounded-full lg:flex lg:justify-between lg:text-[14px] email-container">
+                    <input class="email-input text-primary lg:w-full lg:rounded-full lg:px-4" type="text" placeholder="Inscris ton mail ici...." />
+                    <a
+                        class="send-button bg-secondary-300 px-4 py-2 rounded-full cursor-pointer lg:rounded-full lg:bg-secondary-100 lg:py-4 lg:px-10 hover:bg-secondary-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                        >Envoyer</a
+                    >
                 </div>
+                <div class="message text-primary-100"></div>
             </div>
-            <div class="mt-6 flex justify-between items-center lg:flex lg:justify-between lg:items-center ">
+            <div class="mt-6 flex justify-between items-center lg:flex lg:justify-between lg:items-center">
                 <p class="cursor-pointer">Produits . Service . Le groupe . Contact .</p>
                 <svg class="w-10 h-10 pb-1 lg:w-12 lg:h-auto cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -379,23 +414,67 @@
                 </svg>
             </div>
             <div class="h-[0.5px] bg-secondary-200 mt-1 lg:mt-4"></div>
-            <div class="flex justify-end mt-1 lg:flex lg:justify-between  lg:mt-4">
+            <div class="flex justify-end mt-1 lg:flex lg:justify-between lg:mt-4">
                 <p class="hidden lg:block">Ce site a un faible impact environnemental.</p>
                 <p class="opacity-50 cursor-pointer">Mentions légales . Presse</p>
             </div>
         </footer>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM3XTH3LS5"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-          gtag('config', 'G-DM3XTH3LS5');
+            gtag("config", "G-DM3XTH3LS5");
         </script>
         <script>
             document.getElementById("menu-toggle").addEventListener("click", function () {
                 const menu = document.getElementById("menu");
                 menu.classList.toggle("hidden");
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const sendButtons = document.querySelectorAll(".send-button");
+
+                sendButtons.forEach((button) => {
+                    button.addEventListener("click", function () {
+                        const emailInput = this.closest(".email-container").querySelector(".email-input");
+                        const email = emailInput.value;
+                        const messageDiv = document.querySelector(".message");
+
+                        if (!email) {
+                            messageDiv.textContent = "Veuillez entrer une adresse e-mail.";
+                            return;
+                        }
+
+                        // Replace 'https://example.com/your-endpoint' with the actual URL you want to fetch
+                        fetch("https://example.com/your-endpoint", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({ email: email }),
+                        })
+                            .then((response) => {
+                                if (!response.ok) {
+                                    throw new Error("Network response was not ok");
+                                }
+                                return response.json();
+                            })
+                            .then((data) => {
+                                emailInput.value = "";
+
+                                messageDiv.textContent = "Merci ! Votre adresse e-mail a été envoyée.";
+                            })
+                            .catch((error) => {
+                                emailInput.value = "";
+                                messageDiv.textContent = "Une erreur est survenue. Veuillez réessayer plus tard.";
+                                console.error("There was a problem with the fetch operation:", error);
+                            });
+                    });
+                });
             });
         </script>
     </body>
