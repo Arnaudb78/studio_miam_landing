@@ -1239,6 +1239,10 @@ video {
     padding: 0.5rem;
   }
 
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
   .lg\:p-24 {
     padding: 6rem;
   }
